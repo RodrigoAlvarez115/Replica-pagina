@@ -1,0 +1,570 @@
+*{
+    font-family: Roboto, Helvetica, sans-serif ;
+}
+/** etiquetas)  */
+body {
+    background-image: url(imagenes/fondo.jpg);
+}
+header {
+    width: 960px;
+}
+section{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:black;
+}
+article {
+    background-color: brown;
+    width: 650px;
+    float: left;
+}
+aside {
+    background-color: brown;
+    width: 290px;
+    float: right;
+    position: sticky;
+    top: 60px;
+}
+a {
+    text-decoration: none;
+}
+/** etiquetas)  */
+
+#portada {
+    height: 120px;
+    width: 960px;
+    position: relative;
+    display: block;
+}
+/** barra de navegacion */ 
+ul {
+    list-style-type: none;
+    margin-left:5px;
+    padding: 0;
+}
+ul.contenedor_guias {
+    margin-left: 10px;
+}
+nav {
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    margin-left: 2px;
+}
+ul.boton li {
+    display: inline;
+}
+ul.boton li a {
+    text-decoration:none ;
+    display: inline-block;
+    width: 182px;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: -5px;
+    background-color: brown;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+ul.boton li a:hover {
+    background-color:white ;
+    color: black;
+}
+form {
+    height: 40px;
+    margin: auto;
+    display: inline-block;
+}
+input {
+    height: 40px;
+    width: auto;
+}
+#buscar_boton {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+#buscar_boton:hover {
+    background-color:white ;
+    color: black;
+}
+/** barra de navegacion */ 
+.noticia_principal a:hover {
+    text-decoration: underline;
+    color: white;
+}
+#titulo_noticia {
+    text-shadow: 2px 2px black;
+}
+#subtitulo {
+    font-style: italic;
+}
+#parrafo {
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 20px;
+}
+/** h1- p y sus clases o ids */
+h1 {
+    margin-left: 20px;
+    color: white;
+    margin-right: 1em;
+}
+#titulo_guias {
+    font-size: 35px;
+    text-align: center;
+    margin-left: auto;
+}
+h2 {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h3 {
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 146px;
+    font-size: 16px;
+    color: white;
+}
+p {
+    margin-left: 20px;
+    color: white;
+}
+p.parrafo_index {
+    margin-right: 20px;
+}
+.parrafo_guias {
+    width: 400px;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+}
+/** h1- p y sus clases o ids */
+
+/** imagenes clases e ids */
+.imagen_caratula {
+    width: 650px;
+    height: 400px;
+}
+#imagen_noticia {
+    width: 300px;
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.imagenes_guias {
+    width: 200px;
+    height: 120px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.imagenes_guias:hover {
+    border: 4px solid rgba(100, 100, 100, 1);
+    border-radius: 17px;
+}
+.caja_secundaria :hover {
+    text-shadow: 2px 2px black;
+}
+.contenedor_guias a:hover {
+    text-shadow: 2px 2px black;
+}
+.noticia_secundaria {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 250px;
+    height: 130px;
+}
+.reseña {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.videos {
+    width:650px;
+    height: 400px;
+}
+/** imagenes clases e ids */
+/** pie de pagina */
+footer {
+    background-color: black;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes i {
+    margin-left: 5px;
+    margin-top: 5px;
+    height:20px;
+    width:20px;
+    color: white;
+}
+.boton_scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: brown;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+  }
+.boton_scroll_on {
+    transform: translateY(0);
+  }
+/** pie de pagina */
+@media handheld, screen and (min-width: 600px) and
+(max-width: 967px)  {
+    header {
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+    article {
+        width: 67%;
+        height: auto;
+    }
+    aside {
+        width: 30%;
+        float: right;
+    }
+    /** etiquetas)  */
+    
+    #portada {
+        height: auto;
+        width: 100%;
+    }
+    /** barra de navegacion */ 
+    nav {
+        margin-left: 5px;
+    }
+    ul.boton {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    ul.boton li a {
+        width: 18%;
+        height: auto;
+        font-size: 1em;
+        line-height: auto;
+    }
+    form {
+        width: 28%;
+        margin: 0;
+    }
+    input {
+        width: 62%;
+    }
+    #buscar_boton {
+        width: 35%;
+    }
+    /** barra de navegacion */ 
+    #guias {
+        width: 100%;
+    }
+    #noticias {
+        height: auto;
+        width: 100%;
+    }
+    /** h1- p y sus clases o ids */
+    h1 {
+        margin-left: 1em;
+        font-size: 1em;
+    }
+    #titulo_guias {
+        font-size: 1.5em;
+    }
+    h2 {
+        display: block;
+        font-size: 0.9em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    h3 {
+        display:block;
+        width: 90%;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.9em;
+        margin-right: 1em;
+    }
+    .parrafo_guias {
+        width: 60%;
+        font-size: 0.9em;
+        position: relative;
+        top: -1em;
+        margin-left: 0.3em;
+    }
+    /** h1- p y sus clases o ids */
+    
+    /** imagenes clases e ids */
+    .imagen_caratula {
+        width: 100%;
+        height: auto;
+    }
+    #imagen_noticia {
+        width: 50%;
+    }
+    .imagenes_guias {
+        width: 30%;
+        height: auto; 
+    }
+    .imagenes_guias:hover {
+        border: 0.1em solid rgba(100, 100, 100, 1);
+        border-radius: 0.8em;
+    }
+    .noticia_secundaria {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        width: 80%;
+        height: auto;
+    }
+    .reseña {
+        width: 6em;
+        height: 6em;
+        display: block;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .videos {
+        width:100%;
+        height: 20em;
+    }
+    /** imagenes clases e ids */
+}
+@media handheld, screen and (min-width:500px) and
+ (max-width: 599px) {
+    header {
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+    article {
+        width: 100%;
+        height: auto;
+    }
+    aside {
+        display: none;
+    }
+    /** etiquetas)  */
+    
+    #portada {
+        height: auto;
+        width: 100%;
+    }
+    /** barra de navegacion */ 
+    nav {
+        margin-left: 6px;
+    }
+  
+    ul.boton {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    ul.boton li a {
+        width: 18%;
+        height: auto;
+        font-size: 1em;
+        line-height: auto;
+    }
+    form {
+        width: 28%;
+        margin: 0;
+    }
+    input {
+        width: 62%;
+    }
+    #buscar_boton {
+        width: 35%;
+        padding: 0;
+    }
+    /** barra de navegacion */ 
+    #guias {
+        width: 100%;
+    }
+    #noticias {
+        height: auto;
+        width: 100%;
+    }
+    /** h1- p y sus clases o ids */
+    h1 {
+        margin-left: 1em;
+        font-size: 1em;
+    }
+    #titulo_guias {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.9em;
+        margin-right: 1em;
+    }
+    .parrafo_guias {
+        width: 60%;
+        font-size: 0.8em;
+        position: relative;
+        top: -1.6em;
+        margin: 0.5em;
+    }
+    /** h1- p y sus clases o ids */
+    
+    /** imagenes clases e ids */
+    .imagen_caratula {
+        width: 100%;
+        height: auto;
+    }
+    #imagen_noticia {
+        width: 40%;
+    }
+    .imagenes_guias {
+        width: 30%;
+        height: auto;
+        margin-left: 0.8em;
+    }
+    .videos {
+        width:100%;
+        height: 20em;
+    }
+}
+@media handheld, screen and (max-width:499px) {
+    header {
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+    article {
+        width: 100%;
+        height: auto;
+    }
+    aside {
+        display: none;
+    }
+    /** etiquetas)  */
+    
+    #portada {
+        height: auto;
+        width: 100%;
+    }
+    /** barra de navegacion */ 
+    nav {
+        position: relative;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    ul.boton {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    ul.boton li a {
+        display: inline-block;
+        width: 33%;
+        height: auto;
+        margin-right: auto;
+        font-size: 0.8em;
+        line-height: auto;
+    }
+    form {
+        width: 66%;
+        margin: 0;
+    }
+    input {
+        width: 60%;
+        margin-left: -3px;
+    }
+    #buscar_boton {
+        width: 38%;
+        padding: 0;
+        display: inline;
+        font-size: 0.7em;
+        margin-left: -3px;
+    }
+    /** barra de navegacion */ 
+    #guias {
+        width: 100%;
+    }
+    #noticias {
+        height: auto;
+        width: 100%;
+    }
+    /** h1- p y sus clases o ids */
+    h1 {
+        margin-left: 1em;
+        font-size: 0.9em;
+        margin-right: 1em;
+    }
+    #titulo_guias {
+        font-size: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #titulo_noticia {
+        font-size: 0.9em;
+        margin: 10px;
+    }
+    p {
+        font-size: 0.8em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    #subtitulo {
+        margin: 10px;
+        font-size: 0.7em;
+    }
+    #parrafo {
+        margin: 10px;
+        font-size: 0.7em;
+    }
+    .parrafo_guias {
+        width: auto;
+        font-size: 0.8em;
+        position: static;
+        display: block;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        text-align: center;
+    }
+    /** h1- p y sus clases o ids */
+    
+    /** imagenes clases e ids */
+    .imagen_caratula {
+        width: 100%;
+        height: auto;
+    }
+    #imagen_noticia {
+        width: 40%;
+    }
+    .imagenes_guias {
+        width: 30%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .videos {
+        width:100%;
+        height: auto;
+    }
+}

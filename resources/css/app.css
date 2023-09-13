@@ -1,0 +1,213 @@
+*{
+    font-family: Roboto, Helvetica, sans-serif ;
+}
+body {
+    background-color: black;
+}
+header {
+    width: 960px;
+}
+section{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:black;
+    z-index: -1;
+}
+aside {
+    background-color: brown;
+    width: 290px;
+    float: right;
+    position: sticky;
+    top: 60px;
+}
+article {
+    background-color: brown;
+    width: 650px;
+    float: left;
+}
+a {
+    text-decoration: none;
+}
+/** etiquetas)  */
+
+#portada {
+    height: 120px;
+    width: 960px;
+    position: relative;
+    display: block;
+}
+/** barra de navegacion */ 
+ul {
+    list-style-type: none;
+    margin-left:5px;
+    padding: 0;
+}
+ul.contenedor_guias {
+    margin-left: 10px;
+}
+nav {
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    margin-left: 2px;
+}
+ul.boton li {
+    display: inline;
+}
+ul.boton li a {
+    display: inline-block;
+    width: 182px;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: -5px;
+    background-color: brown;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+ul.boton li a:hover {
+    background-color:white ;
+    color: black;
+}
+form {
+    height: 40px;
+    margin: auto;
+    display: inline-block;
+}
+input {
+    height: 40px;
+    width: auto;
+}
+#buscar_boton {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+#buscar_boton:hover {
+    background-color:white ;
+    color: black;
+}
+/** barra de navegacion */ 
+.noticia_principal a:hover {
+    text-decoration: underline;
+    color: white;
+}
+#titulo_noticia {
+    text-shadow: 2px 2px black;
+}
+#subtitulo {
+    font-style: italic;
+}
+#parrafo {
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 20px;
+}
+/** h1- p y sus clases o ids */
+h1 {
+    margin-left: 20px;
+    color: white;
+    margin-right: 1em;
+}
+#titulo_guias {
+    font-size: 35px;
+    text-align: center;
+    margin-left: auto;
+}
+h2, h3 {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h3 {
+    font-size: 16px;
+}
+p {
+    margin-left: 20px;
+    color: white;
+}
+p.parrafo_index {
+    margin-right: 20px;
+    text-align: center;
+}
+.parrafo_guias {
+    width: 400px;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+}
+/** h1- p y sus clases o ids */
+
+/** imagenes clases e ids */
+.imagen_caratula {
+    width: 650px;
+    height: 400px;
+}
+#imagen_noticia {
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.imagenes_guias {
+    width: 200px;
+    height: 120px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.imagenes_guias:hover {
+    border: 4px solid rgba(100, 100, 100, 1);
+    border-radius: 17px;
+}
+.caja_secundaria :hover {
+    text-shadow: 2px 2px black;
+}
+.contenedor_guias a:hover {
+    text-shadow: 2px 2px black;
+}
+.noticia_secundaria {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 250px;
+    height: 130px;
+}
+/** imagenes clases e ids */
+/** pie de pagina */
+footer {
+    background-color: black;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes i {
+    margin-left: 5px;
+    margin-top: 5px;
+    height:20px;
+    width:20px;
+    color: white;
+}
+.boton_scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: brown;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+  }
+.boton_scroll_on {
+    transform: translateY(0);
+  }

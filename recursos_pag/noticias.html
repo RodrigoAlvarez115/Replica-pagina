@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimun-scale=1.0, maximun-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9fa7a60eda.js" crossorigin="anonymous"></script>
+    <title>Noticias</title>
+</head>
+<body>
+    <section>
+        <header> 
+            <a href="index.html"><img id="portada" src="imagenes/portada.png"alt="Portada"></a> 
+         </header>
+         <nav>
+            <ul class="boton">
+                <li><a href="index.html">INICIO</a> </li>
+                <li><a href="noticias.html">NOTICIAS</a> </li>
+                <li><a href="reseñas.html">RESEÑAS</a> </li>
+                <li><a href="guias.html">GUIAS</a> </li>
+                <li><form>
+                    <input name="q" type="search">
+                    <input id="buscar_boton" type="submit" value="Buscar"></form>
+                   </form></li>
+             </ul>
+               </nav>
+               <aside class="caja_secundaria">
+                <a href="#"><img class="noticia_secundaria" src="imagenes/ofertas-Steam.jpg" alt="ofertas de steam">
+                <h2>Las ofertas de invierno 2023 llegaron a steam!</h2></a>
+                <a href="#"><img class="reseña" src="imagenes/bioshock.jpeg" alt="bioshock">
+                <h3>A 20 años de uno de los shooters más importantes de la década y de la historia.</h3></a> 
+                <a href="#"><img class="reseña" src="imagenes/psplus.jpg" alt="PspPlus">
+                <h3>Persona 5 y Deep Rock Galactic son los nuevos juegos gratis que estarán en playstation Plus en Enero.</h3></a>
+            </aside>
+               <article>
+                <div class="noticia_principal">
+                    <iframe class="videos" src="https://www.youtube.com/embed/1O6Qstncpnc?"
+                    title="Hogwarts Legacy - Official Reveal Trailer | PS5" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="#"><h1>Howarts Legacy verá la luz el 10 de Febrero</h1>
+                    <p class="parrafo_index">Uno de los juegos más esperados del año esta a la vuelta de la esquina.</p></a>
+                </div>
+                <div class="noticia_principal">
+                    <iframe class="videos" src="https://www.youtube.com/embed/Sc3GbTpkAmw" title="Granblue Fantasy Versus: Rising - Reveal Trailer"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="#"><h1>Granblue Fantasy Versus Rising anunciado!</h1>
+                    <p class="parrafo_index">Para el 2023 el juego de lucha de cygames y ark system works tendra nuevo contenido.</p></a>
+                </div>
+                <div class="noticia_principal">
+                    <iframe class="videos" src="https://www.youtube.com/embed/JwOqR9hQT-E" title="THE PATHLESS | Coming to Switch and Xbox February 2"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="#"><h1>Ya hay fecha de lanzamiento para estas versiones de The Pathless</h1>
+                    <p class="parrafo_index">Un fluido viaje onírico y siniestro nos espera muy pronto en Xbox y Nintendo Switch.</p></a>
+                </div>
+               </article>
+               <footer class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a> 
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </footer>
+                <button class="boton_scroll" id="boton_scrolltop">
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+                  <script src="scroll.js"></script>
+    </section>
+</body>
+</html>
