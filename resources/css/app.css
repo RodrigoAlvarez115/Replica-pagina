@@ -4,6 +4,9 @@
 body {
     background-color: black;
 }
+aside,article {
+    background-color: brown;
+}
 header {
     width: 960px;
 }
@@ -15,14 +18,12 @@ section{
     z-index: -1;
 }
 aside {
-    background-color: brown;
     width: 290px;
     float: right;
     position: sticky;
     top: 60px;
 }
 article {
-    background-color: brown;
     width: 650px;
     float: left;
 }
@@ -91,7 +92,7 @@ input {
     color: black;
 }
 /** barra de navegacion */ 
-.noticia_principal a:hover {
+.noticia_principal :hover {
     text-decoration: underline;
     color: white;
 }
@@ -162,16 +163,6 @@ p.parrafo_index {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-.imagenes_guias:hover {
-    border: 4px solid rgba(100, 100, 100, 1);
-    border-radius: 17px;
-}
-.caja_secundaria :hover {
-    text-shadow: 2px 2px black;
-}
-.contenedor_guias a:hover {
-    text-shadow: 2px 2px black;
-}
 .noticia_secundaria {
     display: block;
     margin-left: auto;
@@ -179,6 +170,21 @@ p.parrafo_index {
     margin-top: 20px;
     width: 250px;
     height: 130px;
+}
+.imagenes_guias:hover {
+    border: 4px solid rgba(100, 100, 100, 1);
+    border-radius: 17px;
+}
+.caja_secundaria h3 {
+    transition: text-shadow 0.3s ease;
+}
+
+.caja_secundaria h3:hover {
+    text-shadow: 2px 2px black;
+}
+
+.contenedor_guias a:hover {
+    text-shadow: 2px 2px black;
 }
 /** imagenes clases e ids */
 /** pie de pagina */

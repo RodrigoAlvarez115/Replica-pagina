@@ -10,7 +10,7 @@ const btn_scrolltop = document.getElementById("boton_scrolltop")
     }
 
     const add_btn_scrolltop = () => {
-      if (window.scrollY < 300) {
+      if (window.scrollY < 1000) {
         btn_scrolltop.classList.remove("boton_scroll_on")
       } else {
         btn_scrolltop.classList.add("boton_scroll_on")
