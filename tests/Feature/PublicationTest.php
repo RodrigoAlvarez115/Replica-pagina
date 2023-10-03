@@ -3,12 +3,13 @@
 namespace Tests\Feature;
 
 use App\Models\Publication;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class PublicationTest extends TestCase
 {
-    use DatabaseTransactions;
+    
+    use RefreshDatabase;
 
     public function test_create_publication()
     {
@@ -43,6 +44,6 @@ class PublicationTest extends TestCase
             $response = $this->get($route);
             $response->assertStatus(200);
         }
-    } 
+    }
     
 }
